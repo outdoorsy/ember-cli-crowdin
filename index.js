@@ -7,7 +7,9 @@ module.exports = {
   preBuild: function() {
     if (this.app.env !== 'development') {
       // download consuming application's translations
-      return require('./lib/commands/download').run.call(this.project);
+      return require('./lib/commands/download').run.call(this, {
+        project: this.project
+      });
     }
   },
 
