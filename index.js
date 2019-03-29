@@ -15,7 +15,7 @@ module.exports = {
       // don't download in development; would slow things down.  Devs should download manually
       && this.app.env !== 'development'
       // if this is ember-cli-crowdin itself, there's nothing to download
-      && !this.root.includes('ember-cli-crowdin')
+      && !this.project.root.includes('ember-cli-crowdin')
     ) {
       return this._downloadTranslations().then(() => {
         this.hasDownloadedTranslations = true;
