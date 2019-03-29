@@ -9,8 +9,14 @@ module.exports = {
   hasDownloadedTranslations: false,
 
   preBuild: function() {
-    // only download translations on initial build, not on live reloads
-    if (!this.hasDownloadedTranslations && this.app.env !== 'development' && this.app.name !== 'dummy') {
+    if (
+      // only download translations on initial build, not on live reloads
+      !this.hasDownloadedTranslations
+      // don't download in development; would slow things down.  Devs should download manually
+      && this.app.env !== 'development'
+      // if this is ember-cli-crowdin itself, there's nothing to download
+      && !this.root.includes('ember-cli-crowdin')
+    ) {
       return this._downloadTranslations().then(() => {
         this.hasDownloadedTranslations = true;
       });
