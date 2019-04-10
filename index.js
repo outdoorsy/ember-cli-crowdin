@@ -68,7 +68,6 @@ module.exports = {
       'i18n:report': require('./lib/commands/report'),
       'i18n:validate': require('./lib/commands/validate'),
       'i18n:download': require('./lib/commands/download'),
-      'i18n:download-all': require('./lib/commands/download-all'),
       'i18n:setup': require('./lib/commands/setup'),
       'i18n:upload': require('./lib/commands/upload')
     };
