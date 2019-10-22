@@ -30,7 +30,7 @@
     "push:git": "git push --tags origin HEAD:master"
   },
   "dependencies": {
-    "@outdoorsyco/crowdin-api": "github:outdoorsy/crowdin-api#pass-params-to-get",
+    "@outdoorsyco/crowdin-api": "2.2.0",
     "crowdin-node": "github:outdoorsy/crowdin-node#updates",
     "ember-cli-babel": "^6.12.0",
     "fs-extra": "^7.0.1",

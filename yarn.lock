@@ -197,9 +197,10 @@
   dependencies:
     "@glimmer/di" "^0.2.0"
 
-"@outdoorsyco/crowdin-api@github:outdoorsy/crowdin-api#pass-params-to-get":
+"@outdoorsyco/crowdin-api@2.2.0":
   version "2.2.0"
-  resolved "https://codeload.github.com/outdoorsy/crowdin-api/tar.gz/f8200800fa33c4480cf7e964702a191207cb94f5"
+  resolved "https://registry.yarnpkg.com/@outdoorsyco/crowdin-api/-/crowdin-api-2.2.0.tgz#1b3abdf4613a287c5db8fb62fb2b1cf45c64273c"
+  integrity sha512-6aRb1LJkYi5eO8AOXeZsz3vF0du3ZXE/2TbospZSwe+/WJXvHxyyb4wZ7oEa4AywBngdulypX6fIfGCgKpNOOA==
   dependencies:
     request "^2.81.0"
     request-promise-native "^1.0.5"
