@@ -67,7 +67,7 @@
     "rimraf": "^2.6.2"
   },
   "engines": {
-    "node": "6.* || >= 7.* || >= 8.*"
+    "node": "8.* || >= 10.*"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
